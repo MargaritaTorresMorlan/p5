@@ -1,0 +1,463 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Quinta Aplicacion</title>
+
+<!--grupo css-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.5.5.min.css"/>
+<link rel="stylesheet" href="css/temasapp5.min.css"/>
+<!--grupo javaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/imagen1.jpg','imagenes/popo2.jpg','imagenes/imagen8.jpg','imagenes/colima.jpg','imagenes/colima5.jpg','imagenes/tierra4.jpg','imagenes/beneficio4.jpg','imagenes/beneficio3.jpg','imagenes/tipo2.jpg','imagenes/comunidad2.jpg')">
+<div data-role="page" id="principal" data-theme="c">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>DIA DE LA TIERRA  </h1>
+  </div>
+  <div>
+    <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:960px;height:150px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+  </div>
+  <div></div>
+  
+  
+  <div>
+      <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+      <li class="ui-first-child ui-last-child">
+  <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>¿QUE ES EL DIA DE LA TIERRA?</h2>
+  <p>Se muestra el significado </p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+ <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>¿PORQUE SE CELEBRA EL DIA DE LA TIERRA?</h2>
+  <p>Se muestra porque se celebra el dia de la tierra</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+  <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>CUIDADOS DEL MEDIO AMBIENTE</h2>
+  <p>Muestra los cuidados del medio ambiente</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>CALENTAMIENTO GLOBAL O CLIMA CLIMATICO</h2>
+      <p>Muestra el calentamiento global o el clima climatico </p>
+      </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+     <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>BENEFICIOS</h2>
+     <p>Muestra los beneficios de como cuidar el medio ambiente</p>
+     </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>TIPOS DE CONTAMINACION</h2>
+      <p>Muestra los tipos de contaminacion</p>
+      </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+     <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>PROBLEMAS EN LA COMUNIDAD</h2>
+     <p>Muestra algunos problemas en la comunidad</p>
+     </a>
+   </li>
+  </ul>
+</div>
+<div data-role="footer" align="center" data-theme="b">
+ 
+  <div>
+    <h4>APLICACION CINCO</h4>
+    <h4>TORRES MORLAN MARGARITA </h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="c">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>¿QUE ES EL DIA DE LA TIERRA?</h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+     <p>El Día de la Tierra es un día celebrado en muchos países el 22 de abril. Su promotor, el senador estadounidense Gaylord Nelson, instauró este día para crear una conciencia común a los problemas de la superpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra. Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos.</p>
+     <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/tierra2.jpg',1)"><img src="imagenes/tierra.png" width="640" height="280" id="Image16"></a></p>
+     <p>El dia que se celebra el dia de la tierra es el dia 22 dede abril y lo han celebrado desde el 22 de abril de 1970</p>
+     <H2>IMPORTANCIA DEL 22 DE ABRIL</H2>
+     <P>Gaylord Nelson escogió la fecha de tal manera que se maximizara la participación en las universidades, ya que lo consideraba un encuentro entre maestros y alumnos. Determinó que la semana del 19 al 25 de abril era la mejor apuesta, ya que esta no coincidía con los exámenes o las vacaciones de primavera.8 Más aún, esta fecha no tenía ningún conflicto con celebraciones religiosas como la Pascua o el Pésaj, y era demasiado tarde en primavera para tener un clima decente. Más estudiantes preferirían estar en clase y habría menos competencia con otros eventos de media semana –así que eligió el miércoles 22 de abril. El día también coincidió con el aniversario del natalicio de John Muir, notable conservacionista.
+
+Sin el conocimiento de Nelson,9 el 22 de abril de 1970 fue, por coincidencia, el centésimo aniversario del natalicio de Lenin, cuando se trasladó al calendario gregoriano, el cual fue adoptado por los rusos hasta 1918. La revista Time reportó que muchos no pensaron que la fecha fuera una coincidencia, sino una pista de que el evento fue un “engaño comunista”, y citaron a un miembro de Daughters of the American Revolution, diciendo: “elementos subversivos planean hacer que los niños americanos vivan en un ambiente que sea bueno para ellos”.10 John Edgar Hoover, director del Buró Federal de Investigaciones, pudo haber creado la intriga de la conexión con Lenin, ya que se presumía que el FBI llevaba a cabo tareas de vigilancia en las manifestaciones de 1970.11 La idea de que la fecha fuera escogida para celebrar el centenario de Lenin, aún persiste en algunos cuarteles.</P>
+ <div data-role="collapsible" data-content-theme="c">
+     <h1>ESTA ES UNA PAGINA DONDE PUEDES ENCONTRAR MAS IMFORMACION</h1>
+     <P><a href="http://www.un.org/es/events/motherearthday/ ">http://www.un.org/es/events/motherearthday/ </a>      </div>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="c">
+  <h4>APLICACION CINCO</h4>
+  <h4>TORRES MORLAN MARGARITA</h4>
+  </div>
+</div>
+</div>
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="c">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>¿PORQUE SE CELEBRA EL DIA DE LA TIERRA?</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+     <P>Este 22 de abril se conmemoran 50 años del Día de la Tierra, fecha en la que países del mundo rinden tributo a la Pachamama y elevan un llamado de reflexión a la humanidad de cara a los problemas ambientales que azotan al planeta.</P>
+      <p>Esta festividad se remonta a 1970, cuando 2.000 universidades, 10.000 escuelas y centenares de comunidades estadounidenses salieron a las calles, como parte de una manifestación multitudinaria para exigir la creación de una agencia para la preservación del medio ambiente.</p>
+      <img src="imagenes/tierra4.jpg" width="29%" height="45%">
+      <p>Ante la presión social, se ordenó la creación de Environmental Protection Agency (Agencia de Protección Ambiental) y realizó el decreto de una serie de leyes destinadas a salvaguardar el planeta.</p>
+      <p>Desde esa fecha, fue declarado el Día de la Tierra en esta nación norteamericana, celebración que en 1990 se extendió internacionalmente.
+Este año el día está dedicado a los árboles, por ello el objetivo para conmemorar la fecha será la siembra de 7,8 millones de especies en los próximos cinco años, refiere el portal Web de la Organización de las Naciones Unidas (ONU)</p></div>
+ </div>
+ <div data-role="footer" data-theme="c">
+       <h4>APLICACION CINCO</h4>
+       <h4>TORRES MORLAN MARGARITA</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="c">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>¿PORQUE SE CELEBRA EL DIA DE LA TIERRA?</h1>
+ </div>	
+ <div data-role="content" align="center">
+   <div>
+      <h2>MEDIAS PREVENTIVAS PARA CUIDAR EL MEDIO AMBIENTE</h2>
+      <P><LI>
+        <div align="left">Transporte:Reducir el individual y promocionar los medios colectivos.
+        </div>
+      </LI>
+      <div align="left">
+        </P>
+      </div>
+      <LI>
+        <div align="left">Energía doméstica:Disminuir su gasto con electrodomésticos de etiqueta energética o apagando los aparatos completamente (y no en modo standby).
+        </div>
+      </LI>
+      <div align="left">
+        </P>
+      </div>
+      <LI>
+        <div align="left">Residuos:Favorecer la separación de basuras y el reciclaje.
+        </div>
+      </LI>
+      <div align="left">
+        </P>
+      </div>
+      <LI>
+        <div align="left">Materiales:Reutilizarlos siempre que se pueda (papel, juguetes, herramientas, muebles…) y evitar usar bolsas, cajas y embalajes.
+        </div>
+      </LI>
+      <div align="left">
+        </P>
+      </div>
+      <LI>
+        <div align="left">Agua:Reducir su consumo colocando, por ejemplo, botellas en las cisternas.
+        </div>
+      </LI>
+      <div align="left">
+        </P>
+      </div>
+      <LI>
+        <div align="left">Riego:Minimizar el riego de jardines y promocionar el sistema por goteo.
+        </div>
+      </LI>
+      <div align="left">
+        </P>
+      </div>
+      <LI>
+        <div align="left">Urbanizar:Sólo donde se sepa que habrá agua suficiente a largo plazo. En muchas ocasiones se otorgan licencias donde no hay agua.
+        </div>
+      </LI>
+      <div align="left">
+        </P>
+      </div>
+      <LI>
+        <div align="left">Naturaleza:Respetar los espacios protegidos y minimizar el impacto en zonas naturales.
+        </div>
+      </LI>
+      <div align="left">
+        </P>
+      </div>
+      <LI>
+        <div align="left">Casas:Construirlas con buenos materiales aislantes térmicos para que la inversión en calefacción y el aire acondicionado sea menor
+        </div>
+      </LI>
+      <div align="left">
+        </P>
+      </div>
+      <LI>
+        <div align="left">Rendijas:Mejorar los aislantes en ventanas y puertas porque entre un 5% y un 10% del calor del hogar se escapa por ellas.
+        </div>
+      </LI>
+      <div align="left">
+        </P>
+      </div>
+      <LI>
+        <div align="left">Paneles solares fotovoltaicos conectados a la red eléctrica.
+        </div>
+      </LI>
+      <div align="left">
+        </P>
+      </div>
+      <LI>
+        <div align="left">Energías alternativas:Darles más valor y estar dispuestos a financiarlas. Si todos las apoyamos, serán rentables, aunque sean más caras.
+        </div>
+      </LI>
+      <div align="left">
+        </P>
+      </div>
+      <LI>
+        <div align="left">Impuestos:Permitir que se asignen para la conservación de recursos.
+        </div>
+      </LI>
+      <div align="left">
+        </P>
+      </div>
+      <LI>
+        <div align="left">Suelo:Minimizar los cambios de uso del suelo y, en general, del suelo artificial.
+        </div>
+      </LI>
+      <div align="left">
+        </P>
+      </div>
+      <LI>
+        <div align="left">Impacto:Dar más importancia a los análisis de impacto ambiental y considerar otras alternativas costosas, pero ambientalmente favorables
+        </div>
+      </LI>
+      <div align="left">
+        </P>
+      </div>
+      <LI>
+        <div align="left">Especies:No trasladarlas fuera de su lugar de origen.
+        </div>
+      </LI>
+      <div align="left">
+        </P>
+      </div>
+      <LI>
+        <div align="left">Invasores:No soltar animales domésticos y mascotas. Pueden ser especies invasoras.
+        </div>
+      </LI>
+      <div align="left">
+        </P>
+      </div>
+      <LI>
+        <div align="left">Productos químicos:Minimizar el uso de compuestos químicos como antibióticos, fertilizantes… y aerosoles.
+        </div>
+      </LI>
+      <div align="left">
+        </P>
+      </div>
+      <LI>
+        <div align="left">Educar a los niños en el valor de los bienes que nos ofrecen los ecosistemas.
+        </div>
+      </LI>
+      <div align="left">
+        </P>
+      </div>
+      <LI>
+        <div align="left">Gobiernos:Exigir la gestión sostenible a largo plazo de los recursos naturales.
+        </div>
+      </LI>
+      <div align="right">
+        </P>       
+   </div>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/tierra3.jpg',1)"><img src="imagenes/tierra5.jpg" width="407" height="302" id="Image18"></a>
+      <div data-role="main" class="ui-content">
+        <div data-role="collapsible" data-content-theme="false">
+          <h1>Regla de las tres erres ecológicas: Reducir, reutilizar, reciclar</h1>
+  <div>
+  <h2>Regla de las tres erres ecológicas: Reducir, reutilizar, reciclar</h2>
+  <P>Las tres erres (3R) ecológicas es una regla para cuidar el medio ambiente, específicamente para reducir el volumen de residuos o basura generada. En pocas palabras, las 3R pretenden desarrollar hábitos de consumo responsable y te concientizan a tirar menos basura, ahorrar dinero y ser un consumidor más responsable, así reduciendo tu huella de carbono.  </P>
+  <H2>REDUCIR</H2>
+  <p>Cuando hablamos de reducir lo que estamos diciendo es que se debe tratar de reducir o simplificar el consumo de los productos directos, o sea, todo aquello que se compra y se consume, ya que esto tiene una relación directa con los desperdicios, y a la vez con nuestro bolsillo. Por ejemplo, en vez de comprar 6 botellas pequeñas de una bebida, se puede conseguir una o dos grandes, teniendo la misma cantidad de producto pero menos envases, no pedir bolsas en los supermercados a menos que sea necesario, reducir el consumo de papel, etc.</p>
+  <P>Si reducimos el consumo, disminuimos el impacto en el medio ambiente. Esta R está totalmente ligada a la concientización y la educación. 
+La reducción puede realizarse en 2 niveles: reducción del consumo de bienes o de energía. De hecho, actualmente la producción de energía produce numerosos desechos (desechos nucleares, dióxido de carbono...)El objetivo sería: </P>
+<LI>
+  <div align="left">Reducir o eliminar la cantidad de materiales destinados a un uso único (por ejemplo, los embalajes). </div>
+</LI>
+<LI>
+  <div align="left">Reducir pérdidas energéticas o de recursos: de agua, desconexión de aparatos eléctricos en stand by, conducción eficiente, desconectar transformadores, etc. </div>
+</LI>
+<LI>
+  <div align="left">
+    <p>Reducir la emisión de gases contaminantes, nocivos o tóxicos evitará la intoxicación animal o vegetal del entorno si llega a cotas no nocivas. </p>
+  </div>
+</LI>
+<img src="imagenes/reducir.jpg" width="29%" height="45%">
+<img src="imagenes/reducir2.png" width="29%" height="45%">
+<h2>REUTILIZAR</h2>
+<P>Al decir reutilizar, nos estamos refiriendo a poder volver a utilizar las cosas, dándole una vida útil a embalajes o materiales que usamos día a día y darles un uso lo más prolongado posible antes de que llegue la hora de deshacernos de ellos definitivamente, disminuyendo así el volumen de la basura y reduciendo el impacto en el medio ambiente.</P>
+<P>Por ejemplo, utilizar la cara limpia de las hojas impresas, el papel usado se puede transformar en pulpa y crear nuevas hojas para escribir, pintar o decorar, darle una nueva vida a los botes de cristal, las cajitas o frascos de PVC, metal o plástico, reutilizar la madera para hacer tus propias estanterías, pintar esa silla vieja, donar libros, aparatos eléctricos, ropa, muebles, etc. </P>
+<P>Esta tarea suele ser la que menos atención recibe y es una de las más importantes. No solo ayuda al medio ambiente sino también a la economía en casa, desarrolla tu imaginación y pondrá un punto original a tu vida. </P>
+<img src="imagenes/reutilizar.jpg" width="29%" height="45%">
+<img src="imagenes/reutilizar2.jpg" width="29%" height="45%">
+<h2>RECICLAR</h2>
+<P>Ésta es una de las R más populares debido a que el sistema de consumo actual ha preferido usar envases de materiales reciclables (plásticos y bricks, sobre todo), pero no biodegradables. Por tanto se requiere el uso de personal y energía para someter los materiales al proceso necesario para su reutilización. Esto significa que mediante el reciclaje se reduce de forma verdaderamente significativa la utilización de nuevos materiales, y con ello, la generación de basura "nueva", sin embargo hay que recordar que al reciclar se gasta mucha energía y se contamina al reprocesar los residuos. </P>
+<P>La mayoría de los materiales que usamos pueden ser reciclados y usados en otras aplicaciones; materiales como el vidrio, pueden reciclarse 40 veces por ejemplo, el plástico se puede reciclar calentándolo hasta que se funda dándole una nueva forma. Es nuestro compromiso reciclar lo mayor posible y disminuir la producción de basura "nueva". </P>
+<img src="imagenes/reciclar.jpg" width="29%" height="45%">
+<img src="imagenes/reciclar2.jpg" width="29%" height="45%">
+  <div align="left"><br>
+  </div>
+  </div>
+  <div>
+  <p>Esta es alguna imagen de las 3R</p>
+  <img src="imagenes/3r.jpg" width="50%" height="50%" align="middle"> </div>
+ </div>
+  </div>
+  </div>
+  </div>
+ <div data-role="footer" data-theme="c">
+    <h4>APLICACION CINCO</h4>
+    <h4>TORRES MORLAN MARGARITA</h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>CALENTAMIENTO GLOBAL O CLIMA CLIMATICO</h1>
+ </div>
+ <div data-role="content" align="center">
+   <div>
+  <P>Estamos en un momento crítico de la historia de la Tierra. A medida que el mundo se vuelve cada vez más frágil, el futuro depara, grandes riesgos y grandes promesas. Para seguir adelante, debemos reconocer que en medio de la magnífica diversidad de culturas y formas de vida, somos una sola comunidad terrestre con un destino común.</P>
+     <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/tierra4.jpg',1)"><img src="imagenes/global.jpg" width="246" height="205" id="Image15"></a></p>
+   <P>Los efectos del calentamiento global se amplificarán, pues cuando el hielo sea sustituido por un océano oscuro la superficie del mar absorberá más energía solar que, de otra forma, reflejaría en el hielo y volvería al espacio. "Con toda ese agua oscura habrá un aumento del calor que almacena el Ártico y por ello, cuando llegue el otoño y el invierno se hará más difícil que aparezca el hielo". "Posteriormente, en la siguiente primavera, como quedará menos hielo será más fácil que se pierda al año siguiente".el declive a largo plazo del Ártico ya ha empezado. Si el calentamiento persiste a este ritmo, para el año 2100 el casquete polar se habrá fundido totalmente en verano.</P>
+   <img src="imagenes/global2.jpg" width="246" height="205" >
+     </div>
+ </div>
+ <div data-role="footer" data-theme="c">
+    <h4>APLICACION CINCO</h4>
+    <H4>TORRES MORLAN MARGARITA</H4>
+  </div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1>BENEFICIOS</h1>
+ </div>
+ <div data-role="content" align="center">
+   <div>
+     <p>Vivir más verde no es sólo un estado mental, es también una forma de vida que trae muchos beneficios.</p>
+     <p>cuando la preparación se alinea con la oportunidad el suceso es inminente. Usted se encuentra en un momento en la historia que es único, nunca antes se había experimentado una crisis económica mundial como la que acabamos de tener recientemente ni una fuerza tan grande destinada a querer corregir el daño causado a nuestro PLANETA</p>
+     <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/beneficio4.jpg',1)"><img src="imagenes/beneficio3.jpg" width="400" height="344" id="Image"></a></p>
+<p>Todos y todo seremos afectados de alguna manera por este movimiento, queda en usted si lo aprovecha y se une rápido, o lo deja pasar y se arrepiente en el futuro.
+ 
+Todos nosotros en un momento u otro nos enfrentamos a la necesidad de cambiar algo en nuestras vidas, en nuestros negocios o lo más probable en ambos.
+ 
+Hay personas que tienden a cambiar por inspiración y otros lo hacen por desesperación, las dos fuerzas son esenciales y capaces de movernos a alturas en nuestras vidas que jamás pensamos que podaríamos alcanzar.</p>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/beneficio3.jpg',1)"><img src="imagenes/beneficio2.jpg" width="311" height="162" id="Image17"></a></p>
+     </div>
+ </div>
+ <div data-role="footer" data-theme="c">
+    <h4>APLICACION CINCO</h4>
+    <H4>TORRES MORLAN MARGARITA</H4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="c">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>TIPOS DE CONTAMINACION</h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+   <H2>CONTAMINACION DEL AGUA</H2>
+     <p>La contaminación del agua se refiere a la elteración de las condiciones naturales del agua de rios, lagos, yacimientos, mares, etc. producida por distintas actividades como: deshecho de residuos sólidos y líquidos domésticos e industriales de cualquier tipo. Uno de los cantaminantes más improtantes del agua es el petróleo que se derrama en el agua de mar por accidentes en plataformas petroleras, o por el hundimiento de barcos portadores de este combustible.</p>
+     <p><img src="imagenes/agua.jpg" width="514" height="325"></p>
+     <h2>CONTAMINACION DEL AIRE</h2>
+     <P>Ocurre por la presencia de contaminantes disueltos en el aire o suspendidos en el y que alteran su calidad y que afectan la susbsistencia de los seres vivos.
+
+Loa pricipales contaminantes del aire son los gases de combustión, CO, CO2, NOx, SOx que se producen por los automóviles, por las industrias, hogares, y la quema de cualquier combustible. Las partículas suspendidas contaminnates que se encuentran el el aire pueden ser cualquier tipo de polvo provocado por actividades industriales o por la construcción. Los incendios foréstales y la s erupciones volcánicas son uns fuente importante de contaminantes del aire</P>
+   <p><img src="imagenes/aire.jpg" width="514" height="325"></p>
+   <h2>CONTAMINACION DEL SUELO</h2>
+   <P>Es el desequilibrio físico, químico y biológico del suelo y que afecta a los seres vivos sean estos plantas o organismos vivos.
+
+Se produce por desechar compuestos extraños al suelo como por ejemplo aceites o disolventes, petróleo, fertilizantes, pesticidas y otros productos agroquímicos usados en exceso. La defosrestación y el derrame de residuos sólidos de minas tambien se consideran fromas de contaminación. El arrojar basura en suelo es contaminación.</P>
+<p><img src="imagenes/suelo.jpg" width="514" height="325"></p>
+<h2>CONTAMINACION SONORA</h2>
+<P>También llamada contaminación auditiva, es la contaminación por el ruido que molesta la tranquilidad y la salud de todos los seres vivos. El ruido lo causan muchas actividades humanas, coches, aviones, motores, máquinas industreiales, la música a lalto volumen, explosiones, la industria de la contrucción, etc.</P>
+<p><img src="imagenes/sonora.jpg" width="514" height="325"></p>
+  <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>IMAGEN SOBRE LOS TIPOS DE CONTAMINACION:</h1>
+  <div>
+  <p>Esta es una imagen sobre los tipos de contaminacion:  
+  <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/tipo2.jpg',1)"><img src="imagenes/tipo.jpg" width="264" height="151" id="Image21"></a><br>
+  </div>
+  <div></div>
+  </div>
+  </div>
+  
+  </div>
+  </div>
+  <div data-role="footer" data-theme="c">
+  <h4>APLICACION CINCO</h4>
+  <H4>TORRES MORLAN MARGARITA</H4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="c">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>PROBLEMAS SOBRE LA COMUNIDAD</h1>
+  </div>
+  <div data-role="content" align="center">
+   <div>
+     <p>Bueno en mi comunidad existe contaminacion porque la basura la dejan en las calles y el camion de la basura no la recoge y la dejan por algun tiempo provocando un olor feo. </p>
+    <img src="imagenes/comunidad.jpg" width="389" height="246">
+    <p>Tambien las personas pintan las paredes, y tambien existe contaminacion del aire ya que pasan muchos carros lanzando mucho hubo que contamina una solucion seria que dejaran por algun tiempo el coche y caminaran asi se disminuyeria mucha contaminacion , otra soucion seria que hicieramos una junta de la colonia y asi poder tratar sobre ese tema 
+     <div data-role="collapsible" data-content-theme="c">
+     <h1>Estas son algunas imagenes de la contaminacion de mi comunidad</h1>
+     <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','imagenes/comunidad2.jpg',1)"><img src="imagenes/comunidad.jpg" width="250" height="250" id="Image22"></a></p>
+     </div>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="c">
+  <h4>APLICACION CINCO</h4>
+  <H4>TORRES MORLAN MARGARITA</H4>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
